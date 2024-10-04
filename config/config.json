@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-word-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWord/HelloWordWebPart.js",
+          "manifest": "./src/webparts/helloWord/HelloWordWebPart.manifest.json"
+        }
+      ]
+    },
+    "second-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/secondWebPart/SecondWebPartWebPart.js",
+          "manifest": "./src/webparts/secondWebPart/SecondWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "custom-task-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customTask/CustomTaskWebPart.js",
+          "manifest": "./src/webparts/customTask/CustomTaskWebPart.manifest.json"
+        }
+      ]
+    },
+    "image-with-choice-group-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/imageWithChoiceGroup/ImageWithChoiceGroupWebPart.js",
+          "manifest": "./src/webparts/imageWithChoiceGroup/ImageWithChoiceGroupWebPart.manifest.json"
+        }
+      ]
+    },
+    "property-control-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/propertyControl/PropertyControlWebPart.js",
+          "manifest": "./src/webparts/propertyControl/PropertyControlWebPart.manifest.json"
+        }
+      ]
+    },
+    "condition-rendering-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/conditionRendering/ConditionRenderingWebPart.js",
+          "manifest": "./src/webparts/conditionRendering/ConditionRenderingWebPart.manifest.json"
+        }
+      ]
+    },
+    "group-of-properties-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/groupOfProperties/GroupOfPropertiesWebPart.js",
+          "manifest": "./src/webparts/groupOfProperties/GroupOfPropertiesWebPart.manifest.json"
+        }
+      ]
+    },
+    "registration-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/registrationForm/RegistrationFormWebPart.js",
+          "manifest": "./src/webparts/registrationForm/RegistrationFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "@microsoft/sp-core-library": {
+      "path": "node_modules/@microsoft/sp-core-library/dist/sp-core-library.js",
+      "globalName": "SPCoreLibrary"
+    },
+    "react": {
+      "path": "node_modules/react/umd/react.production.min.js",
+      "globalName": "React"
+    },
+    "react-dom": {
+      "path": "node_modules/react-dom/umd/react-dom.production.min.js",
+      "globalName": "ReactDOM"
+    }
+  },
+  "localizedResources": {
+    "HelloWordWebPartStrings": "lib/webparts/helloWord/loc/{locale}.js",
+    "SecondWebPartWebPartStrings": "lib/webparts/secondWebPart/loc/{locale}.js",
+    "CustomTaskWebPartStrings": "lib/webparts/customTask/loc/{locale}.js",
+    "ImageWithChoiceGroupWebPartStrings": "lib/webparts/imageWithChoiceGroup/loc/{locale}.js",
+    "PropertyControlWebPartStrings": "lib/webparts/propertyControl/loc/{locale}.js",
+    "ConditionRenderingWebPartStrings": "lib/webparts/conditionRendering/loc/{locale}.js",
+    "GroupOfPropertiesWebPartStrings": "lib/webparts/groupOfProperties/loc/{locale}.js",
+    "RegistrationFormWebPartStrings": "lib/webparts/registrationForm/loc/{locale}.js"
+  }
+}
